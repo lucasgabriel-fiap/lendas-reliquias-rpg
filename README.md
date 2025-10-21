@@ -310,8 +310,5 @@ O sistema de RPG **Lendas e Relíquias**, incluindo suas mecânicas, regras e am
 
 <div align="center">
 
-**⚔️ Feito com dedicação para jogadores de RPG ⚔️**
-
-*"Que suas jogadas sejam sempre críticos!"* 🎲
 
 </div>
