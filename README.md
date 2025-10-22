@@ -1,4 +1,4 @@
-# ⚔️ Lendas e Relíquias - Sistema de Fichas Digitais
+# Lendas e Relíquias - Sistema de Fichas Digitais
 
 <div align="center">
 
@@ -9,51 +9,51 @@
 
 Sistema online de fichas digitais para o RPG **Lendas e Relíquias**
 
-[🎮 Acessar Sistema](https://lendasereliquiasrpg.web.app) | [📖 Reportar Bug](https://github.com/lucasgabriel-fiap/lendas-reliquias-rpg/issues)
+[Acessar Sistema](https://lendasereliquiasrpg.web.app) | [Reportar Bug](https://github.com/lucasgabriel-fiap/lendas-reliquias-rpg/issues)
 
 </div>
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 Sistema web completo para gerenciamento de personagens do RPG **Lendas e Relíquias**, com funcionalidades de autenticação, salvamento automático na nuvem e painel do mestre em tempo real.
 
-### 🎲 Sobre o RPG
+### Sobre o RPG
 
 **Lendas e Relíquias** é um sistema de RPG criado por **Igor Estevam AS**, mestre com mais de 12 anos de experiência, que desenvolveu todo o sistema de regras, mecânicas e ambientação.
 
-### 💻 Desenvolvimento
+### Desenvolvimento
 
 Sistema online desenvolvido por **Lucas Gabriel**, transformando as regras físicas em uma plataforma digital interativa com Firebase.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-### 👥 Para Jogadores
-- ✅ **Autenticação segura** com Firebase Auth
-- ✅ **Ficha digital completa** com todos atributos, habilidades e características
-- ✅ **Auto-save na nuvem** - nunca perca seus dados
-- ✅ **Sistema de classes** com habilidades específicas
-- ✅ **Gerenciamento de inventário** com múltiplos containers
-- ✅ **Rastreamento de recursos** (HP, Determinação, Sanidade)
-- ✅ **Notas do personagem** integradas
-- ✅ **Rolador de dados** D10 com explosão
-- ✅ **Sistema de EXP** e evolução
+### Para Jogadores
+- **Autenticação segura** com Firebase Auth
+- **Ficha digital completa** com todos atributos, habilidades e características
+- **Auto-save na nuvem** - nunca perca seus dados
+- **Sistema de classes** com habilidades específicas
+- **Gerenciamento de inventário** com múltiplos containers
+- **Rastreamento de recursos** (HP, Determinação, Sanidade)
+- **Notas do personagem** integradas
+- **Rolador de dados** D10 com explosão
+- **Sistema de EXP** e evolução
 
-### 👑 Para Mestres
-- ✅ **Painel em tempo real** com todos os jogadores
-- ✅ **Monitoramento de status** (HP crítico, sanidade baixa)
-- ✅ **Histórico de mudanças** automático
-- ✅ **Detecção de anomalias** (valores suspeitos)
-- ✅ **Visualização completa** de fichas, inventário e notas
-- ✅ **Estatísticas da mesa** (EXP médio, jogadores ativos)
-- ✅ **Filtros e busca** inteligente
+### Para Mestres
+- **Painel em tempo real** com todos os jogadores
+- **Monitoramento de status** (HP crítico, sanidade baixa)
+- **Histórico de mudanças** automático
+- **Detecção de anomalias** (valores suspeitos)
+- **Visualização completa** de fichas, inventário e notas
+- **Estatísticas da mesa** (EXP médio, jogadores ativos)
+- **Filtros e busca** inteligente
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
 - **Backend:** Firebase (Authentication + Firestore)
@@ -63,14 +63,14 @@ Sistema online desenvolvido por **Lucas Gabriel**, transformando as regras físi
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Para Jogadores:
 
 1. Acesse: [lendasereliquiasrpg.web.app](https://lendasereliquiasrpg.web.app)
 2. Crie sua conta escolhendo **"Jogador"**
 3. Preencha sua ficha de personagem
-4. Tudo é salvo automaticamente na nuvem ☁️
+4. Tudo é salvo automaticamente na nuvem
 
 ### Para Mestres:
 
@@ -81,9 +81,9 @@ Sistema online desenvolvido por **Lucas Gabriel**, transformando as regras físi
 
 ---
 
-## ⚙️ Configuração do Firebase
+## Configuração do Firebase
 
-### 1️⃣ Criar Projeto no Firebase
+### 1. Criar Projeto no Firebase
 
 1. Acesse [Firebase Console](https://console.firebase.google.com/)
 2. Clique em **"Adicionar projeto"**
@@ -91,15 +91,15 @@ Sistema online desenvolvido por **Lucas Gabriel**, transformando as regras físi
 4. Desabilite o Google Analytics (opcional)
 5. Clique em **"Criar projeto"**
 
-### 2️⃣ Configurar Authentication
+### 2. Configurar Authentication
 
 1. No menu lateral, vá em **Authentication**
 2. Clique em **"Vamos começar"**
 3. Na aba **"Sign-in method"**, ative:
-   - ✅ **Email/Password** (método de login)
+   - **Email/Password** (método de login)
 4. Salve as alterações
 
-### 3️⃣ Configurar Firestore Database
+### 3. Configurar Firestore Database
 
 1. No menu lateral, vá em **Firestore Database**
 2. Clique em **"Criar banco de dados"**
@@ -107,7 +107,7 @@ Sistema online desenvolvido por **Lucas Gabriel**, transformando as regras físi
 4. Selecione a localização (ex: `southamerica-east1`)
 5. Clique em **"Ativar"**
 
-### 4️⃣ Regras de Segurança do Firestore
+### 4. Regras de Segurança do Firestore
 
 Na aba **"Regras"** do Firestore, cole estas regras:
 ```javascript
@@ -148,23 +148,23 @@ service cloud.firestore {
 }
 ```
 
-**📌 Explicação das Regras:**
+**Explicação das Regras:**
 
 - **Usuários:** Qualquer pessoa autenticada pode ler (para verificar roles), mas só pode editar seus próprios dados
 - **Personagens:** 
-  - ✅ Jogadores podem ler/escrever apenas sua própria ficha
-  - ✅ Mestres podem ler TODAS as fichas (para o painel)
-  - ❌ Ninguém pode editar ficha de outro jogador
+  - Jogadores podem ler/escrever apenas sua própria ficha
+  - Mestres podem ler TODAS as fichas (para o painel)
+  - Ninguém pode editar ficha de outro jogador
 
 **Clique em "Publicar"** após colar as regras.
 
-### 5️⃣ Configurar Hosting
+### 5. Configurar Hosting
 
 1. No menu lateral, vá em **Hosting**
 2. Clique em **"Vamos começar"**
 3. Siga os passos (ou use Firebase CLI)
 
-### 6️⃣ Obter Configurações do Firebase
+### 6. Obter Configurações do Firebase
 
 1. Vá em **Configurações do Projeto** (ícone de engrenagem)
 2. Role até **"Seus aplicativos"**
@@ -172,7 +172,7 @@ service cloud.firestore {
 4. Registre o app com um nome
 5. **Copie o objeto `firebaseConfig`**
 
-### 7️⃣ Configurar o Código
+### 7. Configurar o Código
 
 Abra os arquivos `index.html`, `ficha.html` e `mestre.html` e substitua o `firebaseConfig` pelo seu:
 ```javascript
@@ -186,16 +186,16 @@ const firebaseConfig = {
 };
 ```
 
-### 8️⃣ Código Secreto do Mestre
+### 8. Código Secreto do Mestre
 
 No arquivo `index.html`, procure pela linha (~200) e altere o código:
 ```javascript
 const MASTER_SECRET_CODE = "SEUCÓDIGOAQUI";
 ```
 
-⚠️ **Importante:** Mude este código antes de fazer deploy! Este código é necessário para que alguém possa criar uma conta de Mestre.
+**Importante:** Mude este código antes de fazer deploy! Este código é necessário para que alguém possa criar uma conta de Mestre.
 
-### 9️⃣ Deploy
+### 9. Deploy
 ```bash
 # Instale o Firebase CLI (apenas uma vez)
 npm install -g firebase-tools
@@ -212,7 +212,7 @@ firebase deploy
 
 ---
 
-## 📋 Estrutura do Projeto
+## Estrutura do Projeto
 ```
 lendas-reliquias-rpg/
 │
@@ -227,19 +227,19 @@ lendas-reliquias-rpg/
 
 ---
 
-## 🎮 Classes Disponíveis
+## Classes Disponíveis
 
-- ⚔️ **Guerreiro** - Combate direto e controle de campo
-- 🏹 **Caçador** - Rastreio e combate à distância
-- 🌿 **Druida** - Comunhão animal e alquimancia
-- 💀 **Adepto (Necromante)** - Controle de mortos-vivos
-- 🗡️ **Ladino** - Furtividade e dano oportunista
-- ✨ **Pallacerdote** - Suporte e cura divina
-- 🔮 **Ritualista (Abismancia)** - Controle por rituais abissais
+- **Guerreiro** - Combate direto e controle de campo
+- **Caçador** - Rastreio e combate à distância
+- **Druida** - Comunhão animal e alquimancia
+- **Adepto (Necromante)** - Controle de mortos-vivos
+- **Ladino** - Furtividade e dano oportunista
+- **Pallacerdote** - Suporte e cura divina
+- **Ritualista (Abismancia)** - Controle por rituais abissais
 
 ---
 
-## 🔐 Segurança
+## Segurança
 
 - Autenticação obrigatória para acessar o sistema
 - Dados isolados por usuário no Firestore
@@ -250,7 +250,7 @@ lendas-reliquias-rpg/
 
 ---
 
-## 📝 Roadmap
+## Roadmap
 
 - [ ] Sistema de combate integrado
 - [ ] Chat entre jogadores
@@ -262,7 +262,7 @@ lendas-reliquias-rpg/
 
 ---
 
-## 🐛 Reportar Bugs
+## Reportar Bugs
 
 Encontrou algum problema? 
 
@@ -275,15 +275,15 @@ Encontrou algum problema?
 
 ---
 
-## 👥 Créditos
+## Créditos
 
-### 🎲 Criador do Sistema de RPG
+### Criador do Sistema de RPG
 **Igor Estevam AS**
 - Criador do RPG Lendas e Relíquias
 - Desenvolvimento de mecânicas, regras e ambientação
 - Mestre há mais de 12 anos
 
-### 💻 Desenvolvedor do Sistema Online
+### Desenvolvedor do Sistema Online
 **Lucas Gabriel**
 - Desenvolvimento da plataforma web
 - Integração com Firebase
@@ -292,7 +292,7 @@ Encontrou algum problema?
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto é de código aberto para fins educacionais e de entretenimento. 
 
@@ -300,15 +300,8 @@ O sistema de RPG **Lendas e Relíquias**, incluindo suas mecânicas, regras e am
 
 ---
 
-## 📞 Suporte
+## Suporte
 
 - **Issues:** [GitHub Issues](https://github.com/lucasgabriel-fiap/lendas-reliquias-rpg/issues)
 - **Desenvolvedor:** Lucas Gabriel
 - **Sistema RPG:** Igor Estevam AS
-
----
-
-<div align="center">
-
-
-</div>
